@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF2C07D1-261D-43E1-BF43-8A39761C361A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Employees.Entities</RootNamespace>
+    <AssemblyName>Employees.Entities</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Employees.Entities.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Employees.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="GlobalFunctions">
+      <HintPath>..\Libraries\Turnos.GlobalFunctions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Custom\Convenio.vb" />
+    <Compile Include="Custom\EventoFichada.vb" />
+    <Compile Include="Custom\FichadaLectura.vb" />
+    <Compile Include="Custom\HorarioAdicEmpleado.vb" />
+    <Compile Include="Custom\HorarioEmpleado.vb" />
+    <Compile Include="BaseEntity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AusenciaEmpleado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convenio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Empleado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventoFichada.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Feriado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fichada.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FichadaLectura.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Grupo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoDetalle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoSupervisor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HorarioAdicEmpleado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HorarioEmpleado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Liquidacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapeoSupervisor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParametroGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reloj.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoAusencia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrazaCambio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ubicacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

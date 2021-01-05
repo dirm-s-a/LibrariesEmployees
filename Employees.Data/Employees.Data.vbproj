@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDDF6F83-E6FC-439B-84CB-01CD8C76DF6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Employees.Data</RootNamespace>
+    <AssemblyName>Employees.Data</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Employees.Data.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Employees.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\..\FirebirdSql.Data.FirebirdClient-7.1.1-net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="GlobalFunctions">
+      <HintPath>..\Libraries\Turnos.GlobalFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="Conexion">
+      <HintPath>..\Libraries\Conexion.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Employees.Entities\Employees.Entities.vbproj">
+      <Name>Employees.Entities</Name>
+      <Project>{62B524EF-8F9A-45B7-B9B0-106264E5131C}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Custom\EmpleadoData.vb" />
+    <Compile Include="Custom\FichadaData.vb" />
+    <Compile Include="Custom\FichadaLecturaData.vb" />
+    <Compile Include="AccesoDatos.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AusenciaEmpleadoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConvenioData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmpleadoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventoFichadaData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeriadoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FichadaData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FichadaLecturaData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoDetalleData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoSupervisorData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HorarioAdicEmpleadoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HorarioEmpleadoData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LiquidacionData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapeoSupervisorData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParametroGeneralData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelojData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoAusenciaData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrazaCambioData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UbicacionData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UsuarioData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

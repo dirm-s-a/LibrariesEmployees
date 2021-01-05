@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Conexion
+</name>
+</assembly>
+<members>
+<member name="T:Conexion.My.Resources.Resources">
+<summary>
+  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Conexion.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Conexion.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+</summary>
+</member>
+<member name="P:Conexion.clConexionNET.UsarTransaccion">
+ <summary>
+ Obtiene o establece si se ejecutan las consultas bajo la transaccion.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Conexion.clConexionNET.ErrorSQL">
+ <summary>
+ Obtiene si se proujo un Error al Realizar una Operacion.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Conexion.clConexionNET.LastSQL">
+ <summary>
+ Obtiene la Ultima Consulta Ejecutada.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Conexion.clConexionNET.Exception">
+ <summary>
+ Obtiene el Mensage de Error.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Conexion.clConexionNET.PreEjecutar">
+ <summary>
+ Realiza Operaciones antes de ejecutar una Operacion
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Conexion.clConexionNET.LimpiarEstado">
+ <summary>
+ Limpia las Variables de Error.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Conexion.clListPool.ComenzarTransaccion(Conexion.tTipoConectionBD,Conexion.tTipoBD,System.String,System.Transactions.IsolationLevel)">
+ <summary>
+ Genera un nuevo Scope (Ambito de Transaccion) para el Identificador
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

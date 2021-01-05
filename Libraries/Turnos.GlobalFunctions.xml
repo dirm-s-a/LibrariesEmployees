@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Turnos.GlobalFunctions
+</name>
+</assembly>
+<members>
+<member name="T:Turnos.GlobalFunctions.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Turnos.GlobalFunctions.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Turnos.GlobalFunctions.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Turnos.GlobalFunctions.Data.F_IsNullValue(System.DateTime)">
+ <summary>
+ Evalua si el parametro es un nulo interno.
+ </summary>
+ <param name="obj">valor a evaluar.</param>
+ <returns>true: si obj = Date.MinValue</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Turnos.GlobalFunctions.Logger.#ctor">
+ <summary>
+ Versión 16.01.07.
+ </summary>
+</member>
+<member name="P:Turnos.GlobalFunctions.Logger.Loguear">
+ <summary>
+ Indica si la clase realiza Log No.
+ </summary>
+</member>
+<member name="P:Turnos.GlobalFunctions.Logger.Path">
+ <summary>
+ Path del Log. Ingresando '%APP_PATH%' el sistema remplaza por el path de la Aplicación
+ Si el directorio no existe es creado al momento de definir el path
+ </summary>
+</member>
+<member name="P:Turnos.GlobalFunctions.Logger.Name">
+ <summary>
+ Nombre del archivo de Log. 
+ Si el atributo AddDateToName es verdadero, el sistema remplaza por el path de la dll de la case Turnos.GlobalFunctions
+ Si no se llena ningún valor toma el nombre del ensamblado de la Aplicación.
+ </summary>
+</member>
+<member name="M:Turnos.GlobalFunctions.Logger.SaveTXT(System.String,System.Boolean)">
+ <summary>
+ Graba una linea de Log.
+ <param name="flgTimeStamp">Indica si agrega fecha y hora al final de la linea de Log </param>
+ </summary>
+</member>
+</members>
+</doc>
